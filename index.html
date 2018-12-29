@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Navneet Kumar: Full Stack Developer</title>
+  <base href="https://navneetkumar31.github.io/portfolio/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- material icons css -->
+  <link rel="stylesheet" href="./assets/material-icon.css">
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="./assets/bootstrap.min.css">
+
+  <!-- animate css -->
+  <link rel="stylesheet" href="./assets/animate.min.css">
+
+  <!-- w3school css for modal -->
+  <link rel="stylesheet" href="./assets/w3.css">
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Play|Monoton|Orbitron|Architects+Daughter|Pacifico" rel="stylesheet">
+
+  <!-- fontawesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+<link rel="stylesheet" href="styles.4dd8a0e322bb538a2ea9.css"></head>
+<body>
+
+  <app-root></app-root>
+
+  <!-- optional js -->
+  <script>
+    function myMap() {
+      var myLatLng = {
+        lat: 18.589841,
+        lng: 73.782078
+      };
+      var mapOptions = {
+        center: new google.maps.LatLng(18.589841,  73.782078),
+        zoom: 11,
+        mapTypeId: google.maps.MapTypeId.HYBRID,
+      };
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        animation: google.maps.Animation.BOUNCE
+      });
+
+      marker.setMap(map);
+    }
+  </script>
+  <script>
+    function iconChanger() {
+      var sidenav = document.getElementById("sidenav");
+      var sidenavIcon = document.getElementById("sidenavIcon");
+      if (sidenav.style.visibility != "hidden") {
+        sidenavIcon.classList.replace("fa-arrow-left", "fa-arrow-right");
+        // sidenavIcon.classList.remove()
+        // sidenavIcon.classList.add();
+      } else {
+        sidenavIcon.classList.replace("fa-arrow-right", "fa-arrow-left");
+      }
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb9AfRkqkGxCiwvqtfz2tDEpcwnPrWzlg&callback=myMap"></script>
+  <script src="./assets/particles.min.js"></script>
+  <script src="./assets/stats.min.js"></script>
+  <script type="text/javascript" src="./assets/customJs/myParticle.js"></script>
+  <script type="text/javascript" src="./assets/skill-chart.js"></script>
+  <script type="text/javascript" src="./assets/d3.v4.min.js"></script>
+
+  <!-- bootstrap, jquery and pooper js -->
+  <script src="./assets/bootstrap.min.js"></script>
+  <script src="./assets/jquery.min.js"></script>
+  <script src="./assets//popper.min.js"></script>
+
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.2f4a59095805af02bd79.js"></script><script type="text/javascript" src="main.bee51b28f413f41ab73a.js"></script></body>
+</html>
