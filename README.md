@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 My Portfolio in Angular
 
 ## Go to your browser and hit the below link-
